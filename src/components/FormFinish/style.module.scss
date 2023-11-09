@@ -1,0 +1,39 @@
+@import '@styles/base';
+
+.FinishPage {
+  text-align: center;
+  padding: 75px 0;
+  max-width: 90%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  margin-top: -0px;
+  border-radius: 10px;
+  top: auto;
+  transform: initial;
+  box-shadow: 0 5px 10px #d6d9e6;
+
+  @include apply-at-lg-size {
+    padding: 0;
+    box-shadow: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h2 {
+    font-size: 32px;
+    margin: 15px 0;
+    color: $color-Darkblue;
+    font-weight: 700;
+  }
+  p {
+    font-size: 16px;
+    color: $color-gray;
+    padding: 0 20px;
+    line-height: 23px;
+  }
+  .imgThank:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+}

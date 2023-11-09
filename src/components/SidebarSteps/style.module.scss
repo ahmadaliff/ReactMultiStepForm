@@ -1,0 +1,22 @@
+@import '@styles/base';
+
+.sidebar {
+  background: url('/src/assets/images/bg-sidebar-mobile.svg') no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  @include apply-at-lg-size {
+    background: url('/src/assets/images/bg-sidebar-desktop.svg') no-repeat;
+    height: 100%;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 35%;
+    background-size: cover;
+    width: auto;
+    display: block;
+  }
+}

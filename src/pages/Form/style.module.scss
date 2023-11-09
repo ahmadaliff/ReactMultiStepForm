@@ -1,0 +1,52 @@
+@import '@styles/base';
+
+main {
+  height: 100vh;
+  background-color: #eef5ff;
+  @include apply-at-lg-size {
+    background-color: transparent;
+  }
+}
+.Formpage {
+  @include directionX;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  @include apply-at-lg-size {
+    height: 100vh;
+  }
+}
+.Container {
+  min-width: 100%;
+  height: 100%;
+  background-color: #eef5ff;
+  margin: auto;
+  border-radius: 0;
+  display: block;
+  @include apply-at-lg-size {
+    min-width: 45rem;
+    height: 30rem;
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 5px 10px #d6d9e6;
+  }
+}
+.content {
+  border-radius: 10px;
+  padding-bottom: 10rem;
+  margin-top: -5rem;
+  @include directionY;
+  min-width: 50%;
+  height: 100%;
+  position: relative;
+  padding-top: 1rem;
+  gap: 4rem;
+  @include apply-at-lg-size {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+}

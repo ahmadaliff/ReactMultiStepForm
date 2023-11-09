@@ -1,0 +1,9 @@
+export const SET_NEXT_PAGE = 'SET_NEXT_PAGE';
+export const SET_PREV_PAGE = 'SET_PREV_PAGE';
+export const CHANGE_PAGE_BY_VALUE = 'CHANGE_PAGE_BY_VALUE';
+export const SET_DATA_USER = 'SET_DATA_USER';
+export const SET_DATA_PLAN = 'SET_DATA_PLAN';
+export const SET_DATA_ADDONS = 'SET_DATA_ADDONS';
+export const DELETE_DATA_ADDONS = 'DELETE_DATA_ADDONS';
+export const SET_IS_CONFIRM = 'SET_IS_CONFIRM';
+export const RESET_VALUE = 'RESET_VALUE';

@@ -1,0 +1,70 @@
+@import '@styles/base';
+.addons {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  padding: 5%;
+  background-color: $color-white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #d6d9e6;
+  @include apply-at-lg-size {
+    max-width: 25rem;
+    box-shadow: none;
+    padding: 0;
+  }
+  h2,
+  p {
+    margin: 0;
+  }
+  .packs {
+    @include directionY;
+    padding-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .pack {
+    @include directionX;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: $color-light-gray 1px solid;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      border: $color-blue 1px solid !important;
+    }
+    .displayFlex {
+      @include directionX;
+      align-items: center;
+    }
+    .title {
+      padding-left: 0.5rem;
+      h3 {
+        font-size: 14px;
+        color: #174a89;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-Darkblue;
+    }
+
+    .checkMark {
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  .pack.packChecked {
+    border: $color-blue 1px solid !important;
+    background-color: #f8f9fe !important;
+  }
+}

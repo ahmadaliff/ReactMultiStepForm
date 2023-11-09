@@ -1,0 +1,45 @@
+@import '@styles/base';
+.Step {
+  gap: 1rem;
+  margin: 2rem 0px;
+  display: block;
+  box-sizing: border-box;
+  @include apply-at-lg-size {
+    @include directionX;
+    margin: 1.5rem 0 0 1.5rem;
+  }
+  .stepNumber {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: 100%;
+    border: $color-white 1px solid;
+    font-weight: 700;
+    @include directionX;
+    justify-content: center;
+    align-items: center;
+  }
+  .active {
+    background-color: $color-light-blue;
+    color: $color-Darkblue;
+    border-color: $color-light-blue;
+  }
+  .stepInfo {
+    display: none;
+    @include apply-at-lg-size {
+      display: block;
+    }
+    span {
+      color: $color-pastel-blue;
+      font-size: 14px;
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: $color-white;
+    }
+  }
+}

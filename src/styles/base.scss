@@ -1,0 +1,11 @@
+@import './media-mixins.scss';
+@import './color.scss';
+@import './font-poppins.scss';
+@import './layout.scss';
+@import './theme.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Rubik:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}

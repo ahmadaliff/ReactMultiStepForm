@@ -1,0 +1,67 @@
+@import '@styles/base';
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+  color: $color-Darkblue;
+}
+p {
+  font-size: 16px;
+  margin: 0;
+  color: $color-gray;
+}
+.info {
+  padding-bottom: 5rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 5%;
+  background-color: $color-white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #d6d9e6;
+  @include apply-at-lg-size {
+    max-width: 25rem;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .form {
+    .fields {
+      padding-top: 1rem;
+      label {
+        text-transform: capitalize;
+      }
+      input {
+        width: 100%;
+        font-size: 16px;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: $color-light-gray 1px solid;
+        outline: none;
+        color: $color-Darkblue;
+        font-weight: 500;
+        &:focus {
+          border-color: $color-blue;
+        }
+        &::placeholder {
+          color: $color-gray;
+        }
+      }
+      .erorr {
+        border-color: $color-red;
+      }
+      label {
+        color: $color-Darkblue;
+      }
+      span {
+        color: $color-red;
+      }
+    }
+  }
+}
+.displayFlex {
+  @include directionX;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+}

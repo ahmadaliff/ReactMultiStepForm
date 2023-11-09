@@ -1,0 +1,88 @@
+@import '@styles/base';
+.Summary {
+  @include directionY;
+  gap: 0.5rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #d6d9e6;
+  @include apply-at-lg-size {
+    max-width: 25rem;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+  h2,
+  p {
+    margin: 0;
+  }
+  .boxSummary {
+    padding: 1rem;
+    background-color: #eef5ff;
+    border-radius: 10px;
+    .title {
+      @include directionX;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0 1rem 0;
+      border-bottom: $color-light-gray 1px solid;
+      .headerWrap {
+        @include directionY;
+        gap: 0.5rem;
+        h3 {
+          color: #174a89;
+          margin: 0;
+          font-size: 18px;
+          text-transform: capitalize;
+        }
+        p {
+          text-decoration: underline;
+          font-size: 14px;
+          margin: 0;
+          cursor: pointer;
+        }
+        p:hover {
+          transform: scale(1.0125, 1.0125);
+        }
+      }
+      span {
+        color: #174a89;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+  .addOns {
+    @include directionX;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    p {
+      font-weight: 400;
+    }
+    span {
+      color: $color-Darkblue;
+      font-size: medium;
+    }
+  }
+  .total {
+    @include directionX;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    p {
+      font-weight: 400;
+      font-size: 15px;
+    }
+    span {
+      color: $color-blue;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}
